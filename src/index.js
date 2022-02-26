@@ -1,28 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/App';
-import Register from './components/Auth/Register'
-import Login from './components/Auth/Login'
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
+import App from "./components/App";
+import Register from "./components/Auth/Register";
+import Login from "./components/Auth/Login";
+import reportWebVitals from "./reportWebVitals";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import "semantic-ui-css/semantic.min.css";
 
 const Root = () => (
-<Router>
-  <Routes>
-    <Route exact  path = "/" element = {<App/>}/>
-    <Route path = "/login" element = {<Login/>}/>
-    <Route path = "/register" element = {<Register/>}/>
-  </Routes>
-</Router>);
-  
-
-
-ReactDOM.render(
-    <Root />,
-  document.getElementById('root')
+  <Router>
+    <Routes>
+      <Route exact path="/" element={<App />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+    </Routes>
+  </Router>
 );
+
+ReactDOM.render(<Root />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
