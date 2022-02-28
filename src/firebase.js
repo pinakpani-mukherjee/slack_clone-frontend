@@ -3,6 +3,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/database";
 import "firebase/compat/storage";
+import 'firebase/compat/firestore';
 
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -22,3 +23,4 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 export default firebase;
+
