@@ -139,7 +139,7 @@ class Register extends React.Component {
     return (
       <Grid textAlign="center" verticalAlign="middle" className="App">
         <Grid.Column style={{ maxWidth: 450 }}>
-          <Header as="h2" icon color="blue" textAlign="center">
+          <Header as="h1" icon color="blue" textAlign="center">
             <Icon name="puzzle piece" color="blue" />
             Register for Konnect
           </Header>
